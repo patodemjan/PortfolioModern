@@ -1,0 +1,20 @@
+
+.container.my-5{
+
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.aboutme{
+
+    
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-right: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+

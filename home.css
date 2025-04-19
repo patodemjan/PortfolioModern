@@ -1,0 +1,31 @@
+.container.text{
+    font-size: 25px;
+    margin-left: 10%;
+    letter-spacing: 2px;
+    text-align: justify;
+    margin-right: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+ }
+ 
+
+
+.willkommen{
+    font-size: 40px;
+    
+}
+
+.zitat{
+    font-style: oblique;
+}
+
+.emoji{
+    margin-top: 2%;
+    margin-right: 5%;
+    filter: grayscale(95%);
+    height: 40% ;    
+    width: 40%;
+    
+}
+
