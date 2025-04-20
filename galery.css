@@ -1,84 +1,75 @@
-@media (max-width: 768px) {
 
-  /* Zmena vzhľadu boxu pre mobilné zariadenia */
-  .box {
-    display: flex;
-    flex-direction: column; /* Text bude pod sliderom */
-    margin-top: 10%; /* Väčšia medzera medzi boxom a ostatným obsahom */
-    align-items: center; /* Centrujeme obsah v boxe */
-  }
+.box{
+    display: inline-flex;
+    margin-top: 5%;
+}
 
-  /* Zmena štýlov slidera pre mobil */
-  .slider {
+.slider {
     position: relative;
-    width: 100%; /* Slider bude mať 100% šírku */
-    height: 300px; /* Nastavíme fixnú výšku pre slider */
+    width: 55%;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  /* Zmena obrázkov v slideri */
-  .slider img {
-    width: 100%; /* Obrázky sa prispôsobia šírke */
-    height: 100%; /* Výška obrázkov sa teraz prispôsobí výške slidera */
-    object-fit: cover; /* Obrázky sa prispôsobia vo vnútri */
-    margin-bottom: 0; /* Zrušíme medzeru pod obrázkami */
-  }
-
-  /* Úprava obrázkov v slideri (pôvodné nastavenie pre mobil) */
+.slider img {
+    width: 55%;
+    height: 90%;
+    object-fit: cover;
+}
   .img {
     position: absolute;
-    margin-top: 0; /* Bez vrchnej medzery */
+    margin-top: 10%;
     object-fit: cover;
     transition: all 0.5s ease;
-    border-radius: 20px; /* Zmenšime zaoblenie pre mobil */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Znížime tieň */
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
-
-  /* Úprava tlačidiel pre prechod sliderom */
+  
   #prev, #next {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     background-color: rgb(107, 101, 101);
     border: none;
-    padding: 6px 8px; /* Menšie tlačidlá pre mobil */
-    font-size: 20px; /* Zmenšíme písmo */
+    padding: 8px 10px;
+    font-size: 24px;
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
     transition: background 0.3s ease;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
+    
   }
-
-  /* Efekt pri hover */
+  
   #prev:hover, #next:hover {
     background-color: rgba(255, 255, 255, 1);
   }
-
-  /* Zmena pozície tlačidiel pre prechod sliderom */
+.slider img {
+    margin-bottom: 15%;
+}
   #prev {
-    left: 10%;
-    bottom: 10%;
-  }
-
+    
+    left: 44%;
+    bottom: 0%;
+}
+  
   #next {
-    right: 10%;
-    bottom: 10%;
+    right: 44%;
+    bottom: 0%;
+
   }
 
-  /* Úprava textu pre mobilné zariadenia */
-  .text {
-    margin-top: 10%;
-    font-size: 20px; /* Zmenšíme písmo pre mobil */
-    margin-left: 0; /* Zrušíme margin-left */
-    max-width: 80%; /* Väčší text pre mobil */
+ .text{
+    margin-top: 8%;
+    font-size: 25px;
+    margin-left: 10%;
+    max-width: 30%;
     font-style: italic;
-    letter-spacing: 1px;
+    justify-content: center;
+    font-style: oblique;
+    letter-spacing: 2px;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-}
+ }
