@@ -12,7 +12,7 @@
   .slider {
     position: relative;
     width: 100%; /* Slider bude mať 100% šírku */
-    height: auto; /* Výška sa prispôsobí automaticky */
+    height: 300px; /* Nastavíme fixnú výšku pre slider */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -22,9 +22,9 @@
   /* Zmena obrázkov v slideri */
   .slider img {
     width: 100%; /* Obrázky sa prispôsobia šírke */
-    height: auto; /* Výška obrázkov bude automatická */
-    object-fit: cover;
-    margin-bottom: 10%; /* Pridáme medzeru pod obrázkami */
+    height: 100%; /* Výška obrázkov sa teraz prispôsobí výške slidera */
+    object-fit: cover; /* Obrázky sa prispôsobia vo vnútri */
+    margin-bottom: 0; /* Zrušíme medzeru pod obrázkami */
   }
 
   /* Úprava obrázkov v slideri (pôvodné nastavenie pre mobil) */
