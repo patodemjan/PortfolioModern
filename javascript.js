@@ -47,3 +47,31 @@ const items = document.querySelectorAll('.img');
   };
 
   loadShow();
+
+// Counter
+document.addEventListener("DOMContentLoaded", () => {
+  // text
+  let visits = localStorage.getItem("visitCount");
+  visits = visits === null ? 1 : parseInt(visits) + 1;
+  localStorage.setItem("visitCount", visits);
+
+  const counterElement = document.getElementById("visitor-counter");
+  if (counterElement) {
+    counterElement.textContent = "Besucheranzahl: " + visits;
+  }
+
+  // numbercounter
+  let n = localStorage.getItem("on_load_counter");
+  n = n === null ? 1 : parseInt(n) + 1;
+  localStorage.setItem("on_load_counter", n);
+
+  const nums = n.toString().split("").map(Number);
+  const counterVisitor = document.getElementById("CounterVisitor");
+
+  if (counterVisitor) {
+    counterVisitor.innerHTML = "";
+    nums.forEach(i => {
+      counterVisitor.innerHTML += `<span class="counter-item">${i}</span>`;
+    });
+  }
+});
