@@ -48,9 +48,7 @@ const items = document.querySelectorAll('.img');
 
   loadShow();
 
-// Counter
 document.addEventListener("DOMContentLoaded", () => {
-  // text
   let visits = localStorage.getItem("visitCount");
   visits = visits === null ? 1 : parseInt(visits) + 1;
   localStorage.setItem("visitCount", visits);
@@ -60,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     counterElement.textContent = "Besucheranzahl: " + visits;
   }
 
-  // numbercounter
   let n = localStorage.getItem("on_load_counter");
   n = n === null ? 1 : parseInt(n) + 1;
   localStorage.setItem("on_load_counter", n);
